@@ -1,0 +1,11 @@
+services:
+
+  db:
+    container_name: "cruzadodb-dev"
+    image: postgres:17.2
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: cruzadodb
+    ports:
+      - "5432:5432"
